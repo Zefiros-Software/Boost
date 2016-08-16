@@ -4,15 +4,15 @@ for i = 48,  57 do table.insert(charset, string.char(i)) end
 for i = 65,  90 do table.insert(charset, string.char(i)) end
 for i = 97, 122 do table.insert(charset, string.char(i)) end
 
-function string.random(length)
+local function random(length)
     if length > 0 then
-        return string.random(length - 1) .. charset[math.random(1, #charset)]
+        return random(length - 1) .. charset[math.random(1, #charset)]
     else
         return ""
     end
 end
 
-project( "Armadillo-" .. string.random( 3 ) )
+project( "Armadillo-" .. random( 3 ) )
 
     warnings "Off"
     if #os.matchfiles( "src/**.cpp" ) > 0 then

@@ -6,11 +6,7 @@
             "version": "@head"
         },
         {
-            "name": "Zefiros-Software/Armadillo",
-            "version": "@head"
-        },
-        {
-            "name": "Zefiros-Software/ArmadilloExt",
+            "name": "Zefiros-Software/Boost-Accumulators",
             "version": "@head"
         }
     ]

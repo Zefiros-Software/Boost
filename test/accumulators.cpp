@@ -19,16 +19,16 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-#include "gtest/gtest.h"
-#include <armadillo>
+#include <boost/accumulators/statistics/min.hpp>
 
 #include <stdint.h>
 
-TEST( UtilTest, FloatUInt32Max )
+TEST( Test, Example )
 {
-    arma::vec v = {1,2,3};
-    v += v;
-    EXPECT_EQ( v[0], 2 );
+    accumulator_set<int, stats<tag::min> > acc;
+
+    acc(1);
+    EXPECT_EQ(1, (min)(acc));
 }
 
 int main( int argc, char **argv )
