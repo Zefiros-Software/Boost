@@ -1,18 +1,6 @@
-local charset = {}
 
-for i = 48,  57 do table.insert(charset, string.char(i)) end
-for i = 65,  90 do table.insert(charset, string.char(i)) end
-for i = 97, 122 do table.insert(charset, string.char(i)) end
 
-local function random(length)
-    if length > 0 then
-        return random(length - 1) .. charset[math.random(1, #charset)]
-    else
-        return ""
-    end
-end
-
-project( "Boost-" .. random( 3 ) )
+project( "Accumulators" )
 
     warnings "Off"
     if #os.matchfiles( "src/**.cpp" ) > 0 then

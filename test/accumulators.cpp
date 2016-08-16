@@ -19,16 +19,22 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+#include <boost/accumulators/accumulators.hpp>
+#include <boost/accumulators/statistics/stats.hpp>
 #include <boost/accumulators/statistics/min.hpp>
+#include "gtest/gtest.h"
 
 #include <stdint.h>
+
+using namespace boost;
+using namespace accumulators;
 
 TEST( Test, Example )
 {
     accumulator_set<int, stats<tag::min> > acc;
 
-    acc(1);
-    EXPECT_EQ(1, (min)(acc));
+    acc( 1 );
+    EXPECT_EQ( 1, ( min )( acc ) );
 }
 
 int main( int argc, char **argv )
