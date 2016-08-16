@@ -12,7 +12,7 @@ local function random(length)
     end
 end
 
-project( "Armadillo-" .. random( 3 ) )
+project( "Boost-" .. random( 3 ) )
 
     warnings "Off"
     if #os.matchfiles( "src/**.cpp" ) > 0 then
@@ -29,7 +29,7 @@ project( "Armadillo-" .. random( 3 ) )
     end
 
     zpm.export [[
-        includedirs "include/boost/"
-        flags "C++11"
+        includedirs "include/"
+        flags "C++14"
         defines "BOOST_ALL_NO_LIB"
     ]]

@@ -1,23 +1,14 @@
 
-workspace "Armadillo"
+workspace "Boost"
    configurations { "Test" }
 
-   startproject "Armadillo"
+   startproject "Accumulators"
 
-    project "Armadillo"
+    project "Accumulators"
         kind "ConsoleApp"
-        files "main.cpp"
+        files "accumulators.cpp"
 
         zpm.uses {
             "Zefiros-Software/GoogleTest",
-            "Zefiros-Software/Armadillo"
-        }
-
-    project "ArmadilloExt"
-        kind "ConsoleApp"
-        files "main.cpp"
-
-        zpm.uses {
-            "Zefiros-Software/GoogleTest",
-            "Zefiros-Software/ArmadilloExt"
+            "Zefiros-Software/Boost-Accumulators"
         }
