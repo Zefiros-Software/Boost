@@ -10,6 +10,9 @@ project( "Boost" )
         zpm.submodules {
             "libs/preprocessor",
             "libs/accumulators",
+            "libs/type_traits",
+            "libs/parameter",
+            "libs/fusion",
             "libs/config",
             "libs/mpl",
         }
@@ -18,6 +21,9 @@ project( "Boost" )
             includedirs {
                 "libs/preprocessor/include/",
                 "libs/accumulators/include/",
+                "libs/type_traits/include/",
+                "libs/parameter/include/",
+                "libs/fusion/include/",
                 "libs/config/include/",
                 "libs/mpl/include/"
                 }
