@@ -13,6 +13,7 @@ project( "Boost" )
             "libs/type_traits",
             "libs/parameter",
             "libs/fusion",
+            "libs/detail",
             "libs/config",
             "libs/mpl",
         }
@@ -25,6 +26,7 @@ project( "Boost" )
                 "libs/parameter/include/",
                 "libs/fusion/include/",
                 "libs/config/include/",
+                "libs/detail/include/",
                 "libs/mpl/include/"
                 }
         ]]
