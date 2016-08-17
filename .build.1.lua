@@ -6,6 +6,11 @@ project( "Boost" )
 
 
     if zpm.option( "Accumulators" ) then
+
+        zpm.submodules {
+            "libs/accumulators",
+            "libs/mpl"
+        }
         
         zpm.export [[
             includedirs {
