@@ -9,7 +9,7 @@ project( "Boost" )
 
         zpm.submodules {
             "libs/accumulators",
-            "libs/config"
+            "libs/config",
             "libs/mpl",
         }
         
@@ -17,7 +17,7 @@ project( "Boost" )
             includedirs {
                 "libs/accumulators/include/",
                 "libs/config/include/",
-                "libs/mpl/include/",
+                "libs/mpl/include/"
                 }
         ]]
     end
