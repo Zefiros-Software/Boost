@@ -1,0 +1,16 @@
+{
+    "name": "Zefiros-Software/Boost-Dev",
+    "requires": [
+        {
+            "name": "Zefiros-Software/GoogleTest",
+            "version": "@head"
+        },
+        {
+            "name": "Zefiros-Software/Boost",
+            "version": "@head",
+            "options": {
+                "Accumulators": true
+            }
+        }
+    ]
+}

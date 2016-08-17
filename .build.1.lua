@@ -1,19 +1,31 @@
 
 
-project( "Accumulators" )
+project( "Boost" )
+
+    local usesCpp = false
+
+
+    if zpm.option( "Accumulators" ) then
+        
+        zpm.export [[
+            includedirs {
+                "libs/accumulators/include/",
+                "libs/mpl/include/",
+                }
+        ]]
+    end
+
+
+
+
+
 
     warnings "Off"
-    if #os.matchfiles( "src/**.cpp" ) > 0 then
 
+    if usesCpp then
         kind "StaticLib"
-        files {        
-            "src/**.cpp" 
-        }
-
     else
-
         kind "Utility"
-
     end
 
     zpm.export [[

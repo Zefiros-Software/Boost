@@ -10,5 +10,5 @@ workspace "Boost"
 
         zpm.uses {
             "Zefiros-Software/GoogleTest",
-            "Zefiros-Software/Boost-Accumulators"
+            "Zefiros-Software/Boost"
         }
