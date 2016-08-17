@@ -9,12 +9,14 @@ project( "Boost" )
 
         zpm.submodules {
             "libs/accumulators",
-            "libs/mpl"
+            "libs/config"
+            "libs/mpl",
         }
         
         zpm.export [[
             includedirs {
                 "libs/accumulators/include/",
+                "libs/config/include/",
                 "libs/mpl/include/",
                 }
         ]]

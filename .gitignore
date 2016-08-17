@@ -35,5 +35,8 @@ Makefile
 -- ZPM 
 extern/
 assets/
-test/extern
-test/assets
+test/*extern/
+test/*assets/
+
+test/*/obj/
+test/*/bin/
