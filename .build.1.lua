@@ -8,6 +8,7 @@ project( "Boost" )
     if zpm.option( "Accumulators" ) then
 
         zpm.submodules {
+            "libs/preprocessor",
             "libs/accumulators",
             "libs/config",
             "libs/mpl",
@@ -15,6 +16,7 @@ project( "Boost" )
         
         zpm.export [[
             includedirs {
+                "libs/preprocessor/include/",
                 "libs/accumulators/include/",
                 "libs/config/include/",
                 "libs/mpl/include/"
