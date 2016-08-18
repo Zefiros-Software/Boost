@@ -8,7 +8,7 @@ if os.is( "windows" ) then
 else
     os.execute( "bash bootstrap.sh" )
     os.execute( "ls -l" )
-    os.execute( "chmod u+rx b2" )
+    os.execute( "file b2" )
     os.execute( "./b2 -j 8 headers")
 end
 
