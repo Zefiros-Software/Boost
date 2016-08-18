@@ -1,8 +1,8 @@
 
 if os.is( "windows" ) then
-    os.execute( ".\\bootstrap.bat" )
-    os.execute( ".\\b2 -j 8 headers" )
+    os.execute( path.join( os.getcwd(), "bootstrap.bat" ) )
+    os.execute( path.join( os.getcwd(), "b2 -j 8 headers" ) )
 else
-    os.execute( "./bootstrap.sh" )
-    os.execute( "./b2 -j 8 headers")
+    os.execute( path.join( os.getcwd(), "bootstrap.sh" ) )
+    os.execute( path.join( os.getcwd(), "b2 -j 8 headers") )
 end
