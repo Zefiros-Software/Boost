@@ -9,7 +9,7 @@ function addModules( mods )
     end
 
     for _, mod in ipairs(mods) do
-        if table.contains( , mod ) == false then
+        if table.contains( modules, mod ) == false then
             table.insert( modules, mod )
 
             zpm.submodules( "libs/" .. mod )
