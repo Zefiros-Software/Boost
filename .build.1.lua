@@ -11,8 +11,6 @@ function addModules( mods )
     for _, mod in ipairs(mods) do
         if table.contains( modules, mod ) == false then
             table.insert( modules, mod )
-
-            zpm.submodules( "libs/" .. mod )
             zpm.export( "includedirs \"libs/" .. mod .. "/include/\"" )
 
             if os.isdir( "libs/" .. mod .. "/src/" ) then
@@ -26,10 +24,11 @@ end
 
 project( "Boost" )
 
-    addModules({
-        "static_assert",
-        "assert"
-    })
+     zpm.extractdir( "boost" )
+
+     zpm.export [[
+        includedirs "boost/"
+     ]]
 
     if zpm.option("Accumulators") then
         addModules( {'random', 'concept', 'timer', 'typeof', 'optional', 'detail', 'ratio', 'bind', 'exception', 'type_traits', 'io', 'predef', 'serialization', 'parameter', 'range', 'numeric', 'move', 'circular_buffer', 'preprocessor', 'chrono', 'function', 'smart_ptr', 'mpl', 'functional', 'tuple', 'utility', 'integer', 'math', 'intrusive', 'pending', 'algorithm', 'container', 'config', 'accumulators', 'fusion', 'core', 'system', 'iterator', 'test'} )

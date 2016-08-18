@@ -1,4 +1,6 @@
 {
+    "name": "Zefiros-Software/Boost",
+    "postextract": "boost.lua",
     "options": {
         "Io": false,
         "Chrono": false,
