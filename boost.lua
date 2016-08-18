@@ -8,6 +8,7 @@ if os.is( "windows" ) then
 else
     print( os.getcwd(), os.isfile( "bootstrap.sh" ) )
     os.execute( "bash bootstrap.sh" )
+    os.execute( "ls" )
     os.execute( "./b2 -j 8 headers")
 end
 
