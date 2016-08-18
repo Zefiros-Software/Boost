@@ -23,10 +23,10 @@ end
 
 project( "Boost" )
 
-     zpm.extractdir( "boost" )
+     zpm.extractdir( "boost", "include/" )
 
      zpm.export [[
-        includedirs "boost/"
+        includedirs "include/"
      ]]
 
     if zpm.option("Accumulators") then
