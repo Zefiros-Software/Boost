@@ -15,6 +15,7 @@ function addModules( mods )
             zpm.export( "includedirs \"" .. mod .. "\"" )
         end
     end
+end
 
 project( "Boost" )
 
