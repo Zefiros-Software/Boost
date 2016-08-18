@@ -238,20 +238,12 @@ project( "Boost" )
         addModules( {'concept', 'timer', 'typeof', 'optional', 'detail', 'ratio', 'bind', 'exception', 'type_traits', 'io', 'predef', 'function_types', 'range', 'numeric', 'move', 'preprocessor', 'chrono', 'assign', 'function', 'smart_ptr', 'mpl', 'functional', 'tuple', 'utility', 'integer', 'pending', 'algorithm', 'config', 'fusion', 'core', 'system', 'iterator', 'test'} )
     end
 
-    if zpm.option("Jamfile.v2") then
-        addModules( set() )
-    end
-
     if zpm.option("Lambda") then
         addModules( {'timer', 'optional', 'detail', 'ratio', 'bind', 'exception', 'type_traits', 'io', 'predef', 'range', 'lambda', 'numeric', 'move', 'type_index', 'preprocessor', 'chrono', 'function', 'smart_ptr', 'mpl', 'tuple', 'utility', 'integer', 'algorithm', 'config', 'core', 'system', 'iterator', 'test'} )
     end
 
     if zpm.option("LexicalCast") then
         addModules( {'concept', 'timer', 'typeof', 'optional', 'detail', 'ratio', 'bind', 'exception', 'type_traits', 'io', 'predef', 'range', 'numeric', 'move', 'lexical_cast', 'type_index', 'preprocessor', 'chrono', 'function', 'smart_ptr', 'mpl', 'functional', 'tuple', 'utility', 'integer', 'math', 'intrusive', 'variant', 'algorithm', 'container', 'filesystem', 'config', 'fusion', 'core', 'date_time', 'system', 'iterator', 'test'} )
-    end
-
-    if zpm.option("Libraries.htm") then
-        addModules( set() )
     end
 
     if zpm.option("Locale") then
