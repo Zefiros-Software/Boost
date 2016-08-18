@@ -23,7 +23,7 @@ end
 
 project( "Boost" )
 
-     zpm.extractdir( "boost" )
+     zpm.extractdir( "tools/build/" )
 
      zpm.export [[
         includedirs "boost/"
