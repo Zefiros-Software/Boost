@@ -214,10 +214,6 @@ project( "Boost" )
         addModules( {'concept', 'timer', 'optional', 'detail', 'ratio', 'bind', 'exception', 'type_traits', 'io', 'predef', 'interprocess', 'range', 'numeric', 'move', 'lexical_cast', 'preprocessor', 'chrono', 'function', 'smart_ptr', 'icl', 'mpl', 'functional', 'utility', 'integer', 'math', 'intrusive', 'algorithm', 'container', 'config', 'core', 'date_time', 'system', 'iterator', 'test'} )
     end
 
-    if zpm.option("Index.html") then
-        addModules( set() )
-    end
-
     if zpm.option("Integer") then
         addModules( {'type_traits', 'config', 'detail', 'mpl', 'core', 'integer'} )
     end
@@ -278,10 +274,6 @@ project( "Boost" )
         addModules( {'timer', 'optional', 'detail', 'ratio', 'bind', 'exception', 'type_traits', 'io', 'predef', 'range', 'numeric', 'move', 'preprocessor', 'chrono', 'function', 'smart_ptr', 'mpl', 'utility', 'integer', 'algorithm', 'config', 'logic', 'core', 'system', 'iterator', 'test'} )
     end
 
-    if zpm.option("Maintainers.txt") then
-        addModules( set() )
-    end
-
     if zpm.option("Math") then
         addModules( {'random', 'concept', 'timer', 'typeof', 'optional', 'system', 'archive', 'detail', 'ratio', 'exception', 'type_traits', 'io', 'format', 'predef', 'serialization', 'interprocess', 'lambda', 'range', 'program_options', 'numeric', 'lexical_cast', 'move', 'spirit', 'multiprecision', 'type_index', 'iterator', 'preprocessor', 'chrono', 'regex', 'unordered', 'function', 'smart_ptr', 'mpl', 'thread', 'functional', 'tuple', 'utility', 'integer', 'math', 'intrusive', 'pending', 'algorithm', 'container', 'align', 'filesystem', 'config', 'fusion', 'core', 'atomic', 'date_time', 'bind', 'test'} )
     end
@@ -332,10 +324,6 @@ project( "Boost" )
 
     if zpm.option("Phoenix") then
         addModules( {'concept', 'timer', 'typeof', 'optional', 'system', 'detail', 'ratio', 'exception', 'type_traits', 'io', 'predef', 'multi_index', 'parameter', 'function_types', 'range', 'lambda', 'iostreams', 'asio', 'numeric', 'lexical_cast', 'move', 'spirit', 'type_index', 'iterator', 'preprocessor', 'chrono', 'regex', 'assign', 'function', 'smart_ptr', 'mpl', 'thread', 'functional', 'tuple', 'utility', 'integer', 'math', 'signals2', 'test', 'intrusive', 'variant', 'algorithm', 'proto', 'container', 'align', 'filesystem', 'config', 'fusion', 'phoenix', 'core', 'atomic', 'date_time', 'bind', 'log'} )
-    end
-
-    if zpm.option("PlatformMaintainers.txt") then
-        addModules( set() )
     end
 
     if zpm.option("Polygon") then
