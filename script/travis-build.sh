@@ -7,5 +7,4 @@ premake5 gmake
 
 make 
 
-./bin/Test/Armadillo
-./bin/Test/ArmadilloExt
+./bin/Test/Boost

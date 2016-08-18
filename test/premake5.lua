@@ -2,9 +2,9 @@
 workspace "Boost"
    configurations { "Test" }
 
-   startproject "Accumulators"
+   startproject "Boost"
 
-    project "Accumulators"
+    project "Boost"
         kind "ConsoleApp"
         files "accumulators.cpp"
 
