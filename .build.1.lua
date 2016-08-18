@@ -1,4 +1,22 @@
 
+local modules = {}
+
+function addModules( mods )
+
+    if type(mods) ~= "table" then
+        mods = {mods}
+    end
+
+    for _, mod in mods do
+        if table.contains( modules, mod ) == false then
+            modules.insert( mod )
+
+            zpm.submodules( mod )
+            zpm.export [[
+                includedirs "]] .. mod .. [["
+            ]]
+        end
+    end
 
 project( "Boost" )
 
@@ -7,29 +25,45 @@ project( "Boost" )
 
     if zpm.option( "Accumulators" ) then
 
-        zpm.submodules {
-            "libs/preprocessor",
-            "libs/accumulators",
-            "libs/type_traits",
-            "libs/parameter",
-            "libs/fusion",
-            "libs/detail",
-            "libs/config",
-            "libs/mpl",
-        }
-        
-        zpm.export [[
-            includedirs {
-                "libs/preprocessor/include/",
-                "libs/accumulators/include/",
-                "libs/type_traits/include/",
-                "libs/parameter/include/",
-                "libs/fusion/include/",
-                "libs/config/include/",
-                "libs/detail/include/",
-                "libs/mpl/include/"
-                }
-        ]]
+        addModules({"config",
+                    "numeric",
+                    "predef",
+                    "concept",
+                    "exception",
+                    "chrono",
+                    "functional",
+                    "intrusive",
+                    "utility",
+                    "detail",
+                    "container",
+                    "iterator",
+                    "bind",
+                    "circular_buffer",
+                    "range",
+                    "math",
+                    "timer",
+                    "type_traits",
+                    "move",
+                    "function",
+                    "preprocessor",
+                    "parameter",
+                    "system",
+                    "smart_ptr",
+                    "tuple",
+                    "accumulators",
+                    "serialization",
+                    "fusion",
+                    "typeof",
+                    "algorithm",
+                    "pending",
+                    "random",
+                    "integer",
+                    "core",
+                    "mpl",
+                    "optional",
+                    "ratio",
+                    "test",
+                    "io"})
     end
 
 
