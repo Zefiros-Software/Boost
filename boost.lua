@@ -6,6 +6,7 @@ if os.is( "windows" ) then
     os.execute( "bootstrap.bat" )
     os.execute( "b2.exe -j 8 headers" )
 else
+    print( os.getcwd(), os.isfile( "bootstrap.sh" ) )
     os.execute( "./bootstrap.sh" )
     os.execute( "./b2 -j 8 headers")
 end
