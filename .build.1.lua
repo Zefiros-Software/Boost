@@ -9,8 +9,8 @@ function addModules( mods )
     end
 
     for _, mod in ipairs(mods) do
-        if table.contains( modules, mod ) == false then
-            modules.insert( mod )
+        if table.contains( , mod ) == false then
+            table.insert( modules, mod )
 
             zpm.submodules( "libs/" .. mod )
             zpm.export( "includedirs \"libs/" .. mod .. "/include/\"" )
