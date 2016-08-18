@@ -9,7 +9,7 @@ else
     os.execute( "bash bootstrap.sh" )
     os.execute( "ls -l" )
     os.execute( "file b2" )
-    os.execute( "./b2 -j 8 headers")
+    os.execute( path.join( zpm.build._currentDependency.dependencyPath, "b2 -j 8 headers" ) )
 end
 
 os.chdir( oldPath )
