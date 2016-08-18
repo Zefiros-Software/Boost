@@ -1,6 +1,6 @@
 
 local oldPath = os.getcwd()
-os.chwd( zpm.build._currentDependency.dependencyPath )
+os.chdir( zpm.build._currentDependency.dependencyPath )
 
 if os.is( "windows" ) then
     os.execute( "bootstrap.bat" )
@@ -10,4 +10,4 @@ else
     os.execute( "b2 -j 8 headers")
 end
 
-os.chwd( oldPath )
+os.chdir( oldPath )
