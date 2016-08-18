@@ -12,7 +12,7 @@ function addModules( mods )
             modules.insert( mod )
 
             zpm.submodules( mod )
-            zpm.export "includedirs \"".. mod .."\""
+            zpm.export( "includedirs \"" .. mod .. "\"" )
         end
     end
 
