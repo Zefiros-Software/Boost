@@ -26,6 +26,11 @@ end
 
 project( "Boost" )
 
+    addModules({
+        "static_assert",
+        "assert"
+    })
+
     if zpm.option("Accumulators") then
         addModules( {'random', 'concept', 'timer', 'typeof', 'optional', 'detail', 'ratio', 'bind', 'exception', 'type_traits', 'io', 'predef', 'serialization', 'parameter', 'range', 'numeric', 'move', 'circular_buffer', 'preprocessor', 'chrono', 'function', 'smart_ptr', 'mpl', 'functional', 'tuple', 'utility', 'integer', 'math', 'intrusive', 'pending', 'algorithm', 'container', 'config', 'accumulators', 'fusion', 'core', 'system', 'iterator', 'test'} )
     end
