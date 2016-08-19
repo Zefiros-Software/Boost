@@ -21,9 +21,9 @@ function addModules( mods )
                 files( "libs/" .. mod .. "/src/**.cpp" )
 
                 if os.is( "windows" ) then
-                    excludes( path.join( dir, "pthread" ) )
+                    removefiles( path.join( dir, "pthread/**" ) )
                 else
-                    excludes( path.join( dir, "win32" ) )
+                    removefiles( path.join( dir, "win32/**" ) )
                 end
             end
         end
