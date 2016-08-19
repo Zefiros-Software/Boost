@@ -14,10 +14,17 @@ function addModules( mods )
      
             zpm.extractdir( "libs/" .. mod )
 
-            if os.isdir( "libs/" .. mod .. "/src/" ) then
+            local dir = "libs/" .. mod .. "/src/"
+            if os.isdir( dir ) then
 
                 hasFiles = true
                 files( "libs/" .. mod .. "/src/**.cpp" )
+
+                if os.is( "windows" ) then
+                    excludes( path.join( dir, "pthread" ) )
+                else
+                    excludes( path.join( dir, "win32" ) )
+                end
             end
         end
     end
