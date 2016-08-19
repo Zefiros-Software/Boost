@@ -22,8 +22,11 @@
 #include <boost/accumulators/accumulators.hpp>
 #include <boost/accumulators/statistics/stats.hpp>
 #include <boost/accumulators/statistics/min.hpp>
+#include <boost/chrono.hpp>
+
 #include "gtest/gtest.h"
 
+#include <iostream>
 #include <stdint.h>
 
 using namespace boost;
@@ -39,6 +42,7 @@ TEST( Test, Example )
 
 int main( int argc, char **argv )
 {
+    std::cout << boost::chrono::system_clock::now() << '\n';
     testing::InitGoogleTest( &argc, argv );
 
     int32_t result = RUN_ALL_TESTS();

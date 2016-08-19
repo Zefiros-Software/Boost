@@ -9,7 +9,8 @@
             "name": "Zefiros-Software/Boost",
             "version": "@head",
             "options": {
-                "Accumulators": true
+                "Accumulators": true,
+                "Chrono": true
             }
         }
     ]

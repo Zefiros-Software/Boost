@@ -25,10 +25,6 @@ project( "Boost" )
 
      zpm.extractdir( "boost", "include/" )
 
-     zpm.export [[
-        includedirs "include/"
-     ]]
-
     if zpm.option("Accumulators") then
         addModules( {'chrono', 'test', 'smart_ptr', 'system', 'timer'} )
     end
