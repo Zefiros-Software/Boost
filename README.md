@@ -30,7 +30,7 @@ You should define what libraries you use from boost like so:
 "requires": [
     {
         "name": "Zefiros-Software/Boost",
-        "version": "^1.6.0",
+        "version": "^1.61.0",
         "options": {
             "Algorithm": true
         }
