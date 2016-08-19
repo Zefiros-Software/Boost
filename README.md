@@ -13,7 +13,7 @@ In `.package.json`
 "requires": [
     {
         "name": "Zefiros-Software/Boost",
-        "version": "^1.6.0"
+        "version": "^1.61.0"
     }
 ]
 ```
