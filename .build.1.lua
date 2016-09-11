@@ -25,6 +25,7 @@ function addModules( mods )
                 else
                     removefiles( path.join( dir, "win32/**" ) )
                 end
+                removefiles( path.join( dir, "tr1/**" ) )
             end
         end
     end
