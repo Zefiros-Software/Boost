@@ -26,6 +26,7 @@ function addModules( mods )
                     removefiles( path.join( dir, "win32/**" ) )
                 end
                 removefiles( path.join( dir, "tr1/**" ) )
+                removefiles( "**/cpp_main.cpp" )
             end
         end
     end
