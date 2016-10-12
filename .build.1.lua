@@ -434,5 +434,8 @@ project( "Boost" )
     zpm.export [[
         includedirs "include/"
         flags "C++11"
-        defines "BOOST_ALL_NO_LIB"
+        defines {
+            "BOOST_ALL_NO_LIB",
+            "BOOST_TEST_NO_MAIN"
+        }
     ]]
