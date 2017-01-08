@@ -29,7 +29,7 @@ function addModules( mods )
         if table.contains( modules, mod ) == false then
             table.insert( modules, mod )
      
-            zpm.extractdir( "libs/" .. mod )
+            zpm.build.commands.extractdir( "libs/" .. mod )
         end
     end
 end
