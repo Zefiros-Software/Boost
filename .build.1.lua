@@ -11,9 +11,7 @@ function addModules( mods )
     for _, mod in ipairs(mods) do
         if table.contains( modules, mod ) == false then
             table.insert( modules, mod )
-     
-            zpm.extractdir( "libs/" .. mod )
-
+            
             local dir = "libs/" .. mod .. "/src/"
             if os.isdir( dir ) then
 
