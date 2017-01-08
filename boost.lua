@@ -17,3 +17,5 @@ else
 end
 
 os.chdir( oldPath )
+
+zpm.build.commands.extractdir( "boost", "include/" )
