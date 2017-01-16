@@ -24,7 +24,7 @@
 
 local modules = {}
 
-project( "Boost" )
+project "Boost"
 
     warnings "Off"
     kind "StaticLib"
