@@ -6,8 +6,8 @@ gcc --version
 
 cd test/
 
-premake5 install-package --allow-install --allow-module
-premake5 gmake --allow-install
+zpm install-package --allow-install --allow-module
+zpm gmake --allow-install
 
 make 
 
