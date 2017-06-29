@@ -1,0 +1,30 @@
+version: ">0.0.0 || @head"
+export: |
+
+    project "Boost"
+
+        warnings "Off"
+        kind "StaticLib"
+
+        files "libs/*/src/**.cpp"
+
+        filter "system:windows"
+            removefiles( "libs/*/src/pthread/**" )
+            
+        filter "system:not windows"
+            removefiles( "libs/*/src/win32/**" )
+
+        filter {}
+
+        removefiles "libs/*/src/tr1/**"
+        removefiles "cpp_main.cpp" 
+
+        zpm.export [[
+            includedirs "include"
+            cppdialect "C++11"
+
+            defines {
+                "BOOST_ALL_NO_LIB",
+                "BOOST_TEST_NO_MAIN"
+            }
+        ]]

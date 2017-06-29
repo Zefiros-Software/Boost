@@ -1,0 +1,8 @@
+libraries:
+    - name: Zefiros-Software/GoogleTest
+      version: "@head"
+    - name: Zefiros-Software/Boost
+      version: "@head"
+      settings:
+          Accumulators: true
+          Chrono: true
