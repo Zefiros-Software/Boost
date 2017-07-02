@@ -22,36 +22,33 @@
 -- @endcond
 --]]
 
-local oldPath = os.getcwd()
-os.chdir( zpm.build._currentDependency.dependencyPath )
-
-if os.is( "windows" ) then
-    if os.isfile( "b2.exe" ) == false then
+if os.hostis( "windows" ) then
+    if not os.isfile( "b2.exe" ) then
         os.execute( "bootstrap.bat" )
     end
     
     os.execute( "b2.exe -j 8 headers" )
 else
-    if os.isfile( path.join( zpm.build._currentDependency.dependencyPath, "b2" ) ) == false then
+    if not os.isfile("b2") then
         os.execute( "bash bootstrap.sh" )
     end
     
-    os.execute( path.join( zpm.build._currentDependency.dependencyPath, "b2 -j 8 headers" ) )
+    os.execute("b2 -j 8 headers")
 end
 
 os.chdir( oldPath )
 
 local modules = {}
-function addModules( mods )
+local function addModules( mods )
 
     if type(mods) ~= "table" then
         mods = {mods}
     end
 
     for _, mod in ipairs(mods) do
-        if table.contains( modules, mod ) == false then
+        if not table.contains( modules, mod ) then
             table.insert( modules, mod )
-     
+    
             zpm.build.commands.extractdir( "libs/" .. mod )
         end
     end
