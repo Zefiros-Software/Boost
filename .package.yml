@@ -1,98 +1,292 @@
 settings:
-    Accumulators: false
-    Algorithm: false
-    Array: false
-    Asio: false
-    Assign: false
-    Atomic: false
-    Bimap: false
-    Bind: false
-    Chrono: false
-    CircularBuffer: false
-    Compute: false
-    Config: false
-    Container: false
-    Context: false
-    Conversion: false
-    Convert: false
-    Coroutine: false
-    Coroutine2: false
-    Crc: false
-    DateTime: false
-    DisjointSets: false
-    Dll: false
-    DynamicBitset: false
-    Endian: false
-    Exception: false
-    Fiber: false
-    Filesystem: false
-    Flyweight: false
-    Foreach: false
-    Format: false
-    Function: false
-    Functional: false
-    Geometry: false
-    Gil: false
-    Graph: false
-    GraphParallel: false
-    Heap: false
-    Icl: false
-    Interprocess: false
-    Intrusive: false
-    Io: false
-    Iostreams: false
-    Iterator: false
-    Lambda: false
-    LexicalCast: false
-    Locale: false
-    LocalFunction: false
-    Lockfree: false
-    Log: false
-    Logic: false
-    Math: false
-    Metaparse: false
-    Move: false
-    Mpi: false
-    Mpl: false
-    Msm: false
-    MultiArray: false
-    MultiIndex: false
-    Multiprecision: false
-    Numeric: false
-    Parameter: false
-    Phoenix: false
-    Polygon: false
-    Pool: false
-    ProgramOptions: false
-    PropertyMap: false
-    PropertyTree: false
-    Proto: false
-    PtrContainer: false
-    Python: false
-    Qvm: false
-    Random: false
-    Range: false
-    Rational: false
-    Regex: false
-    Serialization: false
-    Signals: false
-    Signals2: false
-    SmartPtr: false
-    Sort: false
-    Spirit: false
-    Statechart: false
-    System: false
-    Test: false
-    Thread: false
-    Timer: false
-    Tokenizer: false
-    Tr1: false
-    Tuple: false
-    TypeErasure: false
-    TypeTraits: false
-    Units: false
-    Utility: false
-    Uuid: false
-    Variant: false
-    Wave: false
-    Xpressive: false
+    Accumulators: 
+        default: false
+        reduce: anyTrue
+    Algorithm: 
+        default: false
+        reduce: anyTrue
+    Array: 
+        default: false
+        reduce: anyTrue
+    Asio: 
+        default: false
+        reduce: anyTrue
+    Assign: 
+        default: false
+        reduce: anyTrue
+    Atomic: 
+        default: false
+        reduce: anyTrue
+    Bimap: 
+        default: false
+        reduce: anyTrue
+    Bind: 
+        default: false
+        reduce: anyTrue
+    Chrono: 
+        default: false
+        reduce: anyTrue
+    CircularBuffer: 
+        default: false
+        reduce: anyTrue
+    Compute: 
+        default: false
+        reduce: anyTrue
+    Config: 
+        default: false
+        reduce: anyTrue
+    Container: 
+        default: false
+        reduce: anyTrue
+    Context: 
+        default: false
+        reduce: anyTrue
+    Conversion: 
+        default: false
+        reduce: anyTrue
+    Convert: 
+        default: false
+        reduce: anyTrue
+    Coroutine: 
+        default: false
+        reduce: anyTrue
+    Coroutine2: 
+        default: false
+        reduce: anyTrue
+    Crc: 
+        default: false
+        reduce: anyTrue
+    DateTime: 
+        default: false
+        reduce: anyTrue
+    DisjointSets: 
+        default: false
+        reduce: anyTrue
+    Dll: 
+        default: false
+        reduce: anyTrue
+    DynamicBitset: 
+        default: false
+        reduce: anyTrue
+    Endian: 
+        default: false
+        reduce: anyTrue
+    Exception: 
+        default: false
+        reduce: anyTrue
+    Fiber: 
+        default: false
+        reduce: anyTrue
+    Filesystem: 
+        default: false
+        reduce: anyTrue
+    Flyweight: 
+        default: false
+        reduce: anyTrue
+    Foreach: 
+        default: false
+        reduce: anyTrue
+    Format: 
+        default: false
+        reduce: anyTrue
+    Function: 
+        default: false
+        reduce: anyTrue
+    Functional: 
+        default: false
+        reduce: anyTrue
+    Geometry: 
+        default: false
+        reduce: anyTrue
+    Gil: 
+        default: false
+        reduce: anyTrue
+    Graph: 
+        default: false
+        reduce: anyTrue
+    GraphParallel: 
+        default: false
+        reduce: anyTrue
+    Heap: 
+        default: false
+        reduce: anyTrue
+    Icl: 
+        default: false
+        reduce: anyTrue
+    Interprocess: 
+        default: false
+        reduce: anyTrue
+    Intrusive: 
+        default: false
+        reduce: anyTrue
+    Io: 
+        default: false
+        reduce: anyTrue
+    Iostreams: 
+        default: false
+        reduce: anyTrue
+    Iterator: 
+        default: false
+        reduce: anyTrue
+    Lambda: 
+        default: false
+        reduce: anyTrue
+    LexicalCast: 
+        default: false
+        reduce: anyTrue
+    Locale: 
+        default: false
+        reduce: anyTrue
+    LocalFunction: 
+        default: false
+        reduce: anyTrue
+    Lockfree: 
+        default: false
+        reduce: anyTrue
+    Log: 
+        default: false
+        reduce: anyTrue
+    Logic: 
+        default: false
+        reduce: anyTrue
+    Math: 
+        default: false
+        reduce: anyTrue
+    Metaparse: 
+        default: false
+        reduce: anyTrue
+    Move: 
+        default: false
+        reduce: anyTrue
+    Mpi: 
+        default: false
+        reduce: anyTrue
+    Mpl: 
+        default: false
+        reduce: anyTrue
+    Msm: 
+        default: false
+        reduce: anyTrue
+    MultiArray: 
+        default: false
+        reduce: anyTrue
+    MultiIndex: 
+        default: false
+        reduce: anyTrue
+    Multiprecision: 
+        default: false
+        reduce: anyTrue
+    Numeric: 
+        default: false
+        reduce: anyTrue
+    Parameter: 
+        default: false
+        reduce: anyTrue
+    Phoenix: 
+        default: false
+        reduce: anyTrue
+    Polygon: 
+        default: false
+        reduce: anyTrue
+    Pool: 
+        default: false
+        reduce: anyTrue
+    ProgramOptions: 
+        default: false
+        reduce: anyTrue
+    PropertyMap: 
+        default: false
+        reduce: anyTrue
+    PropertyTree: 
+        default: false
+        reduce: anyTrue
+    Proto: 
+        default: false
+        reduce: anyTrue
+    PtrContainer: 
+        default: false
+        reduce: anyTrue
+    Python: 
+        default: false
+        reduce: anyTrue
+    Qvm: 
+        default: false
+        reduce: anyTrue
+    Random: 
+        default: false
+        reduce: anyTrue
+    Range: 
+        default: false
+        reduce: anyTrue
+    Rational: 
+        default: false
+        reduce: anyTrue
+    Regex: 
+        default: false
+        reduce: anyTrue
+    Serialization: 
+        default: false
+        reduce: anyTrue
+    Signals: 
+        default: false
+        reduce: anyTrue
+    Signals2: 
+        default: false
+        reduce: anyTrue
+    SmartPtr: 
+        default: false
+        reduce: anyTrue
+    Sort: 
+        default: false
+        reduce: anyTrue
+    Spirit: 
+        default: false
+        reduce: anyTrue
+    Statechart: 
+        default: false
+        reduce: anyTrue
+    System: 
+        default: false
+        reduce: anyTrue
+    Test: 
+        default: false
+        reduce: anyTrue
+    Thread: 
+        default: false
+        reduce: anyTrue
+    Timer: 
+        default: false
+        reduce: anyTrue
+    Tokenizer: 
+        default: false
+        reduce: anyTrue
+    Tr1: 
+        default: false
+        reduce: anyTrue
+    Tuple: 
+        default: false
+        reduce: anyTrue
+    TypeErasure: 
+        default: false
+        reduce: anyTrue
+    TypeTraits: 
+        default: false
+        reduce: anyTrue
+    Units: 
+        default: false
+        reduce: anyTrue
+    Utility: 
+        default: false
+        reduce: anyTrue
+    Uuid: 
+        default: false
+        reduce: anyTrue
+    Variant: 
+        default: false
+        reduce: anyTrue
+    Wave: 
+        default: false
+        reduce: anyTrue
+    Xpressive: 
+        default: false
+        reduce: anyTrue

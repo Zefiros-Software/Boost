@@ -79,7 +79,7 @@ tree = {
     Icl = {'test', 'smart_ptr', 'system', 'date_time', 'chrono', 'timer'},
     Interprocess = {'date_time', 'smart_ptr'},
     Intrusive = {'date_time', 'smart_ptr'},
-    I = {'chrono', 'test', 'smart_ptr', 'system', 'timer'},
+    Io = {'chrono', 'test', 'smart_ptr', 'system', 'timer'},
     Iostreams = {'test', 'filesystem', 'smart_ptr', 'system', 'regex', 'iostreams', 'chrono', 'timer'},
     Iterator = {'chrono', 'test', 'smart_ptr', 'system', 'timer'},
     Lambda = {'chrono', 'test', 'smart_ptr', 'system', 'timer'},
@@ -153,7 +153,9 @@ else
 end
 
 for type, mods in pairs(tree) do
-    addModules(mods)
+    if zpm.setting(type) then
+        addModules(mods)
+    end
 end
 
 zpm.extractdir( "boost", "include/" )
