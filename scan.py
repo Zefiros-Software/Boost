@@ -1,23 +1,30 @@
 import subprocess
 import re
 import os
-import json
+import glob
+import yaml
 
 def convert(word):
-    return ''.join(x.capitalize() or '_' for x in word.split('_'))
+    return ''.join(x or '_' for x in word.split('_'))
 
 def run(cmd):
     return subprocess.Popen(cmd, 
                             stdout=subprocess.PIPE, 
                             stderr=subprocess.PIPE, 
                             stdin=subprocess.PIPE).communicate()
+    
+tree = {
+    'settings': {
+    }
+}
 
+if len(list(glob.iglob('bin.v2/**/bcp.exe', recursive=True))) == 0:
+    run("b2 tools/bcp")
+bcp = list(glob.iglob('bin.v2/**/bcp.exe', recursive=True))[0]
 
-fm = open('mod.txt','w')
-fo = open('opt.txt','w')
-options = {}
+print("tree = {")
 for i in os.listdir("libs/"):
-    out = run( "bcp --list {0}".format( i ) )[0].decode('ascii')
+    out = run( "{0} --list {1}".format(bcp, i) )[0].decode('ascii')
     
     p = re.compile(r"libs\\(\w*)\\")
 
@@ -30,13 +37,18 @@ for i in os.listdir("libs/"):
                     mods.add( p.match(line).group(1) )
 
     if len( mods ) > 0: 
-        fm.write( "if zpm.option(\"{0}\") then\n".format(convert(i)) )
-        fm.write( "\taddModules( {0} )\n".format(mods) )
-        fm.write( "end\n\n" )
+        print("    {} = {},".format(convert(i), mods))
+        #fm.write( "if zpm.option(\"{0}\") then\n".format(convert(i)) )
+        #fm.write( "\taddModules( {0} )\n".format(mods) )
+        #fm.write( "end\n\n" )
 
-        options[ convert(i) ] = False
+        tree['settings'][convert(i)] = {
+            'default': False,
+            'reduce': 'anyTrue'
+        }
 
-json.dump(options, fo)
+print("}")
 
-fm.close()
-fo.close()
+print("\n\n\n\n")
+
+print(yaml.dump(tree,default_flow_style=False))
