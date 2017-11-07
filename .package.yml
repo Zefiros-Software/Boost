@@ -1,283 +1,283 @@
 settings:
-    accumulators:
-        default: false
-        reduce: anyTrue
-    algorithm:
-        default: false
-        reduce: anyTrue
-    array:
-        default: false
-        reduce: anyTrue
-    asio:
-        default: false
-        reduce: anyTrue
-    assign:
-        default: false
-        reduce: anyTrue
-    atomic:
-        default: false
-        reduce: anyTrue
-    bimap:
-        default: false
-        reduce: anyTrue
-    chrono:
-        default: false
-        reduce: anyTrue
-    circularbuffer:
-        default: false
-        reduce: anyTrue
-    compute:
-        default: false
-        reduce: anyTrue
-    config:
-        default: false
-        reduce: anyTrue
-    container:
-        default: false
-        reduce: anyTrue
-    context:
-        default: false
-        reduce: anyTrue
-    convert:
-        default: false
-        reduce: anyTrue
-    coroutine:
-        default: false
-        reduce: anyTrue
-    coroutine2:
-        default: false
-        reduce: anyTrue
-    crc:
-        default: false
-        reduce: anyTrue
-    datetime:
-        default: false
-        reduce: anyTrue
-    disjointsets:
-        default: false
-        reduce: anyTrue
-    dll:
-        default: false
-        reduce: anyTrue
-    dynamicbitset:
-        default: false
-        reduce: anyTrue
-    endian:
-        default: false
-        reduce: anyTrue
-    exception:
-        default: false
-        reduce: anyTrue
-    fiber:
-        default: false
-        reduce: anyTrue
-    filesystem:
-        default: false
-        reduce: anyTrue
-    flyweight:
-        default: false
-        reduce: anyTrue
-    foreach:
-        default: false
-        reduce: anyTrue
-    format:
-        default: false
-        reduce: anyTrue
-    function:
-        default: false
-        reduce: anyTrue
-    geometry:
-        default: false
-        reduce: anyTrue
-    graph:
-        default: false
-        reduce: anyTrue
-    graphparallel:
-        default: false
-        reduce: anyTrue
-    heap:
-        default: false
-        reduce: anyTrue
-    icl:
-        default: false
-        reduce: anyTrue
-    interprocess:
-        default: false
-        reduce: anyTrue
-    intrusive:
-        default: false
-        reduce: anyTrue
-    io:
-        default: false
-        reduce: anyTrue
-    iostreams:
-        default: false
-        reduce: anyTrue
-    iterator:
-        default: false
-        reduce: anyTrue
-    lambda:
-        default: false
-        reduce: anyTrue
-    lexicalcast:
-        default: false
-        reduce: anyTrue
-    locale:
-        default: false
-        reduce: anyTrue
-    localfunction:
-        default: false
-        reduce: anyTrue
-    lockfree:
-        default: false
-        reduce: anyTrue
-    log:
-        default: false
-        reduce: anyTrue
-    logic:
-        default: false
-        reduce: anyTrue
-    math:
-        default: false
-        reduce: anyTrue
-    metaparse:
-        default: false
-        reduce: anyTrue
-    move:
-        default: false
-        reduce: anyTrue
-    mpi:
-        default: false
-        reduce: anyTrue
-    msm:
-        default: false
-        reduce: anyTrue
-    multiarray:
-        default: false
-        reduce: anyTrue
-    multiindex:
-        default: false
-        reduce: anyTrue
-    multiprecision:
-        default: false
-        reduce: anyTrue
-    numeric:
-        default: false
-        reduce: anyTrue
-    parameter:
-        default: false
-        reduce: anyTrue
-    phoenix:
-        default: false
-        reduce: anyTrue
-    polygon:
-        default: false
-        reduce: anyTrue
-    pool:
-        default: false
-        reduce: anyTrue
-    process:
-        default: false
-        reduce: anyTrue
-    programoptions:
-        default: false
-        reduce: anyTrue
-    propertymap:
-        default: false
-        reduce: anyTrue
-    propertytree:
-        default: false
-        reduce: anyTrue
-    proto:
-        default: false
-        reduce: anyTrue
-    ptrcontainer:
-        default: false
-        reduce: anyTrue
-    python:
-        default: false
-        reduce: anyTrue
-    qvm:
-        default: false
-        reduce: anyTrue
-    random:
-        default: false
-        reduce: anyTrue
-    range:
-        default: false
-        reduce: anyTrue
-    rational:
-        default: false
-        reduce: anyTrue
-    regex:
-        default: false
-        reduce: anyTrue
-    serialization:
-        default: false
-        reduce: anyTrue
-    signals:
-        default: false
-        reduce: anyTrue
-    signals2:
-        default: false
-        reduce: anyTrue
-    smartptr:
-        default: false
-        reduce: anyTrue
-    sort:
-        default: false
-        reduce: anyTrue
-    spirit:
-        default: false
-        reduce: anyTrue
-    stacktrace:
-        default: false
-        reduce: anyTrue
-    statechart:
-        default: false
-        reduce: anyTrue
-    system:
-        default: false
-        reduce: anyTrue
-    test:
-        default: false
-        reduce: anyTrue
-    thread:
-        default: false
-        reduce: anyTrue
-    timer:
-        default: false
-        reduce: anyTrue
-    tokenizer:
-        default: false
-        reduce: anyTrue
-    tr1:
-        default: false
-        reduce: anyTrue
-    tuple:
-        default: false
-        reduce: anyTrue
-    typeerasure:
-        default: false
-        reduce: anyTrue
-    typetraits:
-        default: false
-        reduce: anyTrue
-    units:
-        default: false
-        reduce: anyTrue
-    utility:
-        default: false
-        reduce: anyTrue
-    uuid:
-        default: false
-        reduce: anyTrue
-    variant:
-        default: false
-        reduce: anyTrue
-    wave:
-        default: false
-        reduce: anyTrue
-    xpressive:
-        default: false
-        reduce: anyTrue
+  accumulators:
+    default: false
+    reduce: anyTrue
+  algorithm:
+    default: false
+    reduce: anyTrue
+  array:
+    default: false
+    reduce: anyTrue
+  asio:
+    default: false
+    reduce: anyTrue
+  assign:
+    default: false
+    reduce: anyTrue
+  atomic:
+    default: false
+    reduce: anyTrue
+  bimap:
+    default: false
+    reduce: anyTrue
+  chrono:
+    default: false
+    reduce: anyTrue
+  circularbuffer:
+    default: false
+    reduce: anyTrue
+  compute:
+    default: false
+    reduce: anyTrue
+  config:
+    default: false
+    reduce: anyTrue
+  container:
+    default: false
+    reduce: anyTrue
+  context:
+    default: false
+    reduce: anyTrue
+  convert:
+    default: false
+    reduce: anyTrue
+  coroutine:
+    default: false
+    reduce: anyTrue
+  coroutine2:
+    default: false
+    reduce: anyTrue
+  crc:
+    default: false
+    reduce: anyTrue
+  datetime:
+    default: false
+    reduce: anyTrue
+  disjointsets:
+    default: false
+    reduce: anyTrue
+  dll:
+    default: false
+    reduce: anyTrue
+  dynamicbitset:
+    default: false
+    reduce: anyTrue
+  endian:
+    default: false
+    reduce: anyTrue
+  exception:
+    default: false
+    reduce: anyTrue
+  fiber:
+    default: false
+    reduce: anyTrue
+  filesystem:
+    default: false
+    reduce: anyTrue
+  flyweight:
+    default: false
+    reduce: anyTrue
+  foreach:
+    default: false
+    reduce: anyTrue
+  format:
+    default: false
+    reduce: anyTrue
+  function:
+    default: false
+    reduce: anyTrue
+  geometry:
+    default: false
+    reduce: anyTrue
+  graph:
+    default: false
+    reduce: anyTrue
+  graphparallel:
+    default: false
+    reduce: anyTrue
+  heap:
+    default: false
+    reduce: anyTrue
+  icl:
+    default: false
+    reduce: anyTrue
+  interprocess:
+    default: false
+    reduce: anyTrue
+  intrusive:
+    default: false
+    reduce: anyTrue
+  io:
+    default: false
+    reduce: anyTrue
+  iostreams:
+    default: false
+    reduce: anyTrue
+  iterator:
+    default: false
+    reduce: anyTrue
+  lambda:
+    default: false
+    reduce: anyTrue
+  lexicalcast:
+    default: false
+    reduce: anyTrue
+  locale:
+    default: false
+    reduce: anyTrue
+  localfunction:
+    default: false
+    reduce: anyTrue
+  lockfree:
+    default: false
+    reduce: anyTrue
+  log:
+    default: false
+    reduce: anyTrue
+  logic:
+    default: false
+    reduce: anyTrue
+  math:
+    default: false
+    reduce: anyTrue
+  metaparse:
+    default: false
+    reduce: anyTrue
+  move:
+    default: false
+    reduce: anyTrue
+  mpi:
+    default: false
+    reduce: anyTrue
+  msm:
+    default: false
+    reduce: anyTrue
+  multiarray:
+    default: false
+    reduce: anyTrue
+  multiindex:
+    default: false
+    reduce: anyTrue
+  multiprecision:
+    default: false
+    reduce: anyTrue
+  numeric:
+    default: false
+    reduce: anyTrue
+  parameter:
+    default: false
+    reduce: anyTrue
+  phoenix:
+    default: false
+    reduce: anyTrue
+  polygon:
+    default: false
+    reduce: anyTrue
+  pool:
+    default: false
+    reduce: anyTrue
+  process:
+    default: false
+    reduce: anyTrue
+  programoptions:
+    default: false
+    reduce: anyTrue
+  propertymap:
+    default: false
+    reduce: anyTrue
+  propertytree:
+    default: false
+    reduce: anyTrue
+  proto:
+    default: false
+    reduce: anyTrue
+  ptrcontainer:
+    default: false
+    reduce: anyTrue
+  python:
+    default: false
+    reduce: anyTrue
+  qvm:
+    default: false
+    reduce: anyTrue
+  random:
+    default: false
+    reduce: anyTrue
+  range:
+    default: false
+    reduce: anyTrue
+  rational:
+    default: false
+    reduce: anyTrue
+  regex:
+    default: false
+    reduce: anyTrue
+  serialization:
+    default: false
+    reduce: anyTrue
+  signals:
+    default: false
+    reduce: anyTrue
+  signals2:
+    default: false
+    reduce: anyTrue
+  smartptr:
+    default: false
+    reduce: anyTrue
+  sort:
+    default: false
+    reduce: anyTrue
+  spirit:
+    default: false
+    reduce: anyTrue
+  stacktrace:
+    default: false
+    reduce: anyTrue
+  statechart:
+    default: false
+    reduce: anyTrue
+  system:
+    default: false
+    reduce: anyTrue
+  test:
+    default: false
+    reduce: anyTrue
+  thread:
+    default: false
+    reduce: anyTrue
+  timer:
+    default: false
+    reduce: anyTrue
+  tokenizer:
+    default: false
+    reduce: anyTrue
+  tr1:
+    default: false
+    reduce: anyTrue
+  tuple:
+    default: false
+    reduce: anyTrue
+  typeerasure:
+    default: false
+    reduce: anyTrue
+  typetraits:
+    default: false
+    reduce: anyTrue
+  units:
+    default: false
+    reduce: anyTrue
+  utility:
+    default: false
+    reduce: anyTrue
+  uuid:
+    default: false
+    reduce: anyTrue
+  variant:
+    default: false
+    reduce: anyTrue
+  wave:
+    default: false
+    reduce: anyTrue
+  xpressive:
+    default: false
+    reduce: anyTrue

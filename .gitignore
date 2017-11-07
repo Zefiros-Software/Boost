@@ -40,3 +40,5 @@ test/*assets/
 
 test/*/obj/
 test/*/bin/
+**/@bin/*
+**/@obj/*
