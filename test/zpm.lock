@@ -4,29 +4,28 @@
   "private": {
     "libraries": [ {
       "definition": "../",
-      "hash": "10a6127488c346cb2179919b81f0b6e193beb74a",
+      "hash": "b143a5b72075f47307a23e680889d8434c8afc54",
       "name": "Zefiros-Software/Boost",
       "repository": "https://github.com/boostorg/boost.git",
       "settings": {
         "accumulators": true,
         "chrono": true
       },
-      "tag": "boost-1.64.0-beta2",
-      "version": "1.64.0-beta2",
+      "tag": "boost-1.66.0",
+      "version": "1.66.0",
       "versionRequirement": ">0.0.0"
     } ],
     "modules": [ {
       "definition": "https://github.com/Zefiros-Software/ZefirosDefaults.git",
-      "hash": "160843a39a0a14b534c3cb183b1244da846cd2d4",
+      "hash": "aa6146cf03dc15692bad12e61e7dbb8626dc3260",
       "name": "Zefiros-Software/Zefiros-Defaults",
       "public": {
         "libraries": [ {
           "definition": "https://github.com/Zefiros-Software/GoogleTest.git",
-          "hash": "b4d333f14f977b3668de4e794d7d2e00b322d59a",
+          "hash": "1c2f1907047216654599b0057df49d21a2c1400a",
           "name": "Zefiros-Software/GoogleTest",
           "repository": "https://github.com/google/googletest.git",
-          "tag": "release-1.4.0",
-          "version": "1.4.0",
+          "tag": "HEAD",
           "versionRequirement": "@head || ^1.0.0"
         }, {
           "definition": "https://github.com/Zefiros-Software/GoogleBenchmark.git",

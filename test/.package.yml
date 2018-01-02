@@ -7,4 +7,4 @@ libraries:
           chrono: true
 modules:
   - name: Zefiros-Software/Zefiros-Defaults
-    version: '@head'
+    version: '^2.0.0'
