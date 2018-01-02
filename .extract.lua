@@ -140,13 +140,13 @@ if os.ishost( "windows" ) then
         os.execute( "bootstrap.bat" )
     end
     
-    os.execute( "b2.exe -j 8 headers" )
+    os.execute( "b2.exe -j 12 headers" )
 else
     if not os.isfile("b2") then
         os.execute( "bash bootstrap.sh" )
     end
     
-    os.execute("b2 -j 8 headers")
+    os.execute("./b2 -j 12 headers")
 end
 
 for type, mods in pairs(tree) do
