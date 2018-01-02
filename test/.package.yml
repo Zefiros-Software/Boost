@@ -1,9 +1,10 @@
 libraries:
-    - name: Zefiros-Software/GoogleTest
-      version: "@head"
     - name: Zefiros-Software/Boost
       version: ">0.0.0"
       definition: ../
       settings:
           accumulators: true
           chrono: true
+modules:
+  - name: Zefiros-Software/Zefiros-Defaults
+    version: '@head'

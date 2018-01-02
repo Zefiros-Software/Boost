@@ -2,7 +2,6 @@ sudo: required
 language: generic
 matrix:
     include:
-        # Use the built in venv for linux builds
         - os: linux
           dist: trusty          
           env: VERSION=6
@@ -17,9 +16,9 @@ matrix:
           osx_image: xcode8
           language: generic
 install:
-    - wget -O - https://raw.githubusercontent.com/Zefiros-Software/ZPM/master/script/install-zpm-travis.sh | bash
+    - source /dev/stdin <<< "$(curl -s https://raw.githubusercontent.com/Zefiros-Software/ZPM/features/refactor/script/install-zpm.sh)"
 script:
-    - bash script/travis-build.sh
+    - cd test && zpm run test-definition Boost
 notifications:
     slack:
         secure: "MOwmb6DftfMpwwk/egKAF6gjrkwkvb2GpWLH+CTiJ62muaLx5W6tRsKGvD1ZBiVgKSQUh22+OquzXPYSlWtdbAUiLgZeW0uzXEwhjmblbyMN3llOfmc25HgD+emSXURoeIY2Vwf3YWftv0wEmqBbIa3wild4X0NDqRI1UiEbCT8an9pq7EEtzlFeOXX/Rg/5WlNAunxgT9AGyqDbf4Hje+PTsxsBay8I7S55vFzjwANPxGgpil7cMVly25X6xuwgLLZyIPk7J9M7bXeiGBUWNOaJ4iTdjaFkDAKB9oePeIQavVl2G7b1TdReBHVGJYaLxZpuIxQg27KZxzk7Y9TWKGQvgogSAlpwpm8tcNlzYorF37xCkmxv+1zKI0lTQfCzXf5azKlUDseTcTn8QRkyVnSPCWl4khX3Qomh5m1wh811d4OA8HKa6RufRt9vrLyHFrU7BqtyiT/Q++sgcxREeeOltV7gqe7moDAudqcnPSnqD3HzNnspo77FKhdLHEXPfy0LihBxNGiT6Zud/NpXGkLSNMjYCx8hEWhnzmL7Ds1SeIFZlaEDTWqb0yje6ewmDFxW75nf07zLqOJIWkAbJ1ztglKyV6ranPNAF+NA86H47l8Ksxac5F4MyJBp+GmWNu1vtlR7SYR0xVuCEDlgl4eA09C9rXdOa3b3Ytpy83o="

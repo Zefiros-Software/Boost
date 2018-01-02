@@ -23,15 +23,8 @@
 --]]
 
 workspace "Boost"
-   configurations { "Test" }
-
-   startproject "Boost"
-
+   
+    zefiros.testDefinition("Boost")
+    
     project "Boost"
-        kind "ConsoleApp"
-        files "accumulators.cpp"
-
-        zpm.uses {
-            "Zefiros-Software/GoogleTest",
-            "Zefiros-Software/Boost"
-        }
+        zpm.uses "Zefiros-Software/Boost"
