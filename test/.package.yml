@@ -6,5 +6,5 @@ libraries:
           accumulators: true
           chrono: true
 modules:
-  - name: Zefiros-Software/Zefiros-Defaults
-    version: '^2.0.0'
+  - name: Zefiros-Software/Defaults
+    version: '@head'
