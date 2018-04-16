@@ -32,6 +32,7 @@ project "Boost"
     kind "StaticLib"
 
     files( "libs/*/src/**.cpp" )
+    files( "libs/*/src/**.c" )
 
     if os.is( "windows" ) then
         removefiles( "libs/*/src/pthread/**" )
