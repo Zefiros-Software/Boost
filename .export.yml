@@ -7,6 +7,7 @@ export: |
         kind "StaticLib"
 
         files "libs/*/src/**.cpp"
+        files "libs/*/src/**.c" 
 
         filter "system:windows"
             removefiles( "libs/*/src/pthread/**" )
